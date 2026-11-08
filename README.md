@@ -22,8 +22,8 @@ Repérez dans la réponse le tableau products et les champs total, skip et limit
 <img width="1072" height="1198" alt="Image 02" src="https://github.com/user-attachments/assets/c358eb6e-11b2-4bf4-bd2c-ae44bcadb816" />
 
 # Étape 2 : Créer la collection Postman
-New → Collection, nommez-la LAB1 - Gestion Produits REST.
-Ajoutez 4 dossiers : Lecture (GET), Création (POST), Modification (PUT/PATCH), Suppression (DELETE).
+  1. New → Collection, nommez-la LAB1 - Gestion Produits REST.
+  2. Ajoutez 4 dossiers : Lecture (GET), Création (POST), Modification (PUT/PATCH), Suppression (DELETE).
 
 <img width="1907" height="377" alt="Image 03" src="https://github.com/user-attachments/assets/7fbf57bb-3ecf-4d0f-9227-6b0579ad076e" />
 
@@ -59,19 +59,17 @@ json
 <img width="1457" height="973" alt="Image 07" src="https://github.com/user-attachments/assets/8013fe83-e72f-4d56-b8a2-ca53225de126" />
 
 # Étape 6 : PUT et PATCH (dossier Modification)
-
 Les deux requêtes ciblent {{baseUrl}}/products/{{productId}}.
-
-PUT remplace tout : envoyez title, price, category et stock.
-PATCH modifie une partie : envoyez seulement { "price": 139.99 }.
+  - PUT remplace tout : envoyez title, price, category et stock.
+  - PATCH modifie une partie : envoyez seulement { "price": 139.99 }.
 
 <img width="1457" height="841" alt="Image 08" src="https://github.com/user-attachments/assets/1ec7e120-c0aa-4087-a1a0-acf35ccfc8a9" />
 
 <img width="1466" height="838" alt="Image 09" src="https://github.com/user-attachments/assets/55b9be13-f49f-4f11-81ea-055bae5bb4d1" />
 
 # Étape 7 : DELETE (dossier Suppression)
-URL : {{baseUrl}}/products/{{productId}}
-Résultat attendu : 200 avec "isDeleted": true.
+  - URL : {{baseUrl}}/products/{{productId}}
+  - Résultat attendu : 200 avec "isDeleted": true.
 
 <img width="1467" height="970" alt="Image 10" src="https://github.com/user-attachments/assets/ad2b282e-3bf9-4c13-9bca-f3cddf003564" />
 
@@ -103,15 +101,15 @@ pm.test("Produit inexistant → 404", function () {
 <img width="1468" height="728" alt="Image 12" src="https://github.com/user-attachments/assets/4b12c303-f32d-461c-ab07-aafb97bd66be" />
 
 # Étape 10 : Exercices
-Catégorie : GET {{baseUrl}}/products/category/smartphones
-Utilisateur : POST {{baseUrl}}/users/add avec {"firstName": "Awa", "lastName": "Diallo", "age": 25}
+  1. Catégorie : GET {{baseUrl}}/products/category/smartphones
+  2. Utilisateur : POST {{baseUrl}}/users/add avec {"firstName": "Awa", "lastName": "Diallo", "age": 25}
+  3. Temps de réponse :
 
-Temps de réponse :
 javascript
 pm.test("Temps de réponse < 500 ms", function () {
     pm.expect(pm.response.responseTime).to.be.below(500);
 });
 
 # Étape 11 : Préparer les livrables
-Exporter la collection : clic droit sur la collection → Export → Collection v2.1 (JSON).
-Rapport PDF : vos observations, les captures Postman de chaque étape et l’explication des codes HTTP rencontrés (200, 201, 400, 404).
+  1. Exporter la collection : clic droit sur la collection → Export → Collection v2.1 (JSON).
+  2. Rapport PDF : vos observations, les captures Postman de chaque étape et l’explication des codes HTTP rencontrés (200, 201, 400, 404).
