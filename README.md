@@ -7,5 +7,6 @@ Objectif :
 # Etape 1 :
 Copier curl -X GET "https://dummyjson.com/products?limit=5" -H "Accept: application/json" et coller dans la barre de navigateur
 
-
+# Etape 2 :
+Televerser des fichiers (.jpeg)
 
