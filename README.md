@@ -18,4 +18,8 @@ Paramètres de requête (Query Params)
 Envoyer des données au serveur avec POST
 <img width="1057" height="762" alt="Capture d&#39;écran 2026-11-08 105544" src="https://github.com/user-attachments/assets/4682ed22-7c98-43dc-98cb-93ee89527ee0" />
 
+Suppression de ressources : Requête DELETE
+<img width="1017" height="803" alt="Capture d&#39;écran 2026-11-08 110729" src="https://github.com/user-attachments/assets/371b8714-2d4f-486e-9aad-7b25e65549e5" />
+
+
 
