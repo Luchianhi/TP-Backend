@@ -7,5 +7,5 @@ Objectif :
 # Etape 1 :
 Copier curl -X GET "https://dummyjson.com/products?limit=5" -H "Accept: application/json" et coller dans la barre de navigateur
 
-![Uploading Capture d'écran 2026-11-08 101551.png…]()
+
 
