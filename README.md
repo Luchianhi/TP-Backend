@@ -16,7 +16,9 @@
 Dans le terminal :
 curl -X GET "https://dummyjson.com/products?limit=5" -H "Accept: application/json"
 Repérez dans la réponse le tableau products et les champs total, skip et limit. Ouvrez aussi https://dummyjson.com/products/1 dans le navigateur.
-<img width="1072" height="1198" alt="image" src="https://github.com/user-attachments/assets/3e09e2f3-304b-4055-9f01-7ab9009b17c5" />
+
+<img width="885" height="1118" alt="Capture d&#39;écran 2026-11-08 193433" src="https://github.com/user-attachments/assets/7dfade52-9c9f-40e0-965e-84c8dea09bd5" />
+
 <img width="1072" height="1198" alt="Capture d&#39;écran 2026-11-08 193638" src="https://github.com/user-attachments/assets/f85268c7-c539-42a3-a22b-974d5feb8642" />
 
 # Étape 2 : Créer la collection Postman
