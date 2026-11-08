@@ -1,25 +1,31 @@
-# TP-Backend
-Objectif :
-- Comprendre le protocole HTTP et l'architecture REST.
-- Maîtriser l'interface et les fonctionnalités de Postman.
-- Savoir manipuler les méthodes, les headers, les query params et les bodies JSON.
+# LAB 1 : Conception et test d'une API REST avec HTTP et Postman
 
-# Etape 1 :
-Copier curl -X GET "https://dummyjson.com/products?limit=5" -H "Accept: application/json" et coller dans la barre de navigateur
+> Cours : **Développement Backend avec Java, Node.js et PHP**
+> API utilisée : [DummyJSON](https://dummyjson.com) (API publique de démonstration simulant une gestion de produits)
 
-# Etape 2 :
+# Avant de commencer
+  - Installez Postman et vérifiez que curl --version fonctionne dans votre terminal.
+  - Toutes les requêtes ciblent l’API de démonstration https://dummyjson.com.
 
-GET 
-<img width="997" height="758" alt="Capture d&#39;écran 2026-11-08 104529" src="https://github.com/user-attachments/assets/2e8e228a-e2d0-4487-8aac-08d6a47f7f3b" />
+# Objectifs
+  - Comprendre le protocole **HTTP** et l'architecture **REST**.
+  - Maîtriser l'interface et les fonctionnalités de **Postman**.
+  - Savoir manipuler les **méthodes**, les **headers**, les **query params** et les **bodies JSON**.
 
-Paramètres de requête (Query Params)
-<img width="1008" height="801" alt="image" src="https://github.com/user-attachments/assets/59773359-787d-416c-885f-f74d8448c9c4" />
+# Étape 1 : Tester l’API avec cURL
+Dans le terminal :
+curl -X GET "https://dummyjson.com/products?limit=5" -H "Accept: application/json"
+Repérez dans la réponse le tableau products et les champs total, skip et limit. Ouvrez aussi https://dummyjson.com/products/1 dans le navigateur.
+<img width="1072" height="1198" alt="image" src="https://github.com/user-attachments/assets/3e09e2f3-304b-4055-9f01-7ab9009b17c5" />
+<img width="1072" height="1198" alt="Capture d&#39;écran 2026-11-08 193638" src="https://github.com/user-attachments/assets/f85268c7-c539-42a3-a22b-974d5feb8642" />
 
-Envoyer des données au serveur avec POST
-<img width="1057" height="762" alt="Capture d&#39;écran 2026-11-08 105544" src="https://github.com/user-attachments/assets/4682ed22-7c98-43dc-98cb-93ee89527ee0" />
+# Étape 2 : Créer la collection Postman
+New → Collection, nommez-la LAB1 - Gestion Produits REST.
+Ajoutez 4 dossiers : Lecture (GET), Création (POST), Modification (PUT/PATCH), Suppression (DELETE).
 
-Suppression de ressources : Requête DELETE
-<img width="1017" height="803" alt="Capture d&#39;écran 2026-11-08 110729" src="https://github.com/user-attachments/assets/371b8714-2d4f-486e-9aad-7b25e65549e5" />
-
-
-
+# Étape 3 : Configurer l’environnement
+Cliquez sur l’icône d’œil, puis créez l’environnement Demo API Env.
+Ajoutez baseUrl = https://dummyjson.com et productId = 1.
+Sélectionnez cet environnement en haut à droite.
+Utilisez ensuite {{baseUrl}} dans toutes vos requêtes.
+Étape 4 : Requêtes GET (dossier Lecture)
